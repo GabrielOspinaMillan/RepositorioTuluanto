@@ -5,10 +5,25 @@ Aplicación móvil estilo red social que centraliza información sobre seguridad
 
 ## Reglas de Colaboración
 
-Para mantener un flujo de trabajo organizado, nuestro equipo seguirá **GitHub Flow**:
+Para el desarrollo de **Tuluánto** nuestro equipo seguirá el flujo de trabajo **GitHub Flow**, ya que se adapta bien a proyectos pequeños con despliegues continuos y colaborativos.  
 
-1. La rama principal será `main` y siempre contendrá código estable y listo para producción.  
-2. Cada nueva funcionalidad o corrección se desarrollará en una rama aparte, nombrada según su propósito (ejemplo: `feature/rutas-seguras` o `fix/bug-mapa`).  
-3. Una vez completada la tarea, se abrirá un **Pull Request (PR)** hacia `main`.  
-4. Todos los PR deberán ser revisados al menos por un miembro del equipo antes de aprobarse.  
-5. No se permitirán cambios directos en `main`. 
+### Flujo de Ramas
+1. **Rama principal (`main`)**  
+   - Contendrá siempre el código estable y en producción.  
+   - No se permiten cambios directos; todos deben pasar por Pull Requests.  
+
+2. **Ramas de funcionalidad o corrección**  
+   - Cada nueva tarea (funcionalidad, mejora o bugfix) se desarrollará en una rama independiente creada a partir de `main`.  
+   - El nombre de la rama debe indicar su propósito, por ejemplo:  
+     - `feature/estadisticas`  
+     - `feature/mapa-rutas`  
+     - `fix/error-login`  
+
+3. **Pull Requests (PRs)**  
+   - Una vez finalizada la tarea en su rama, se abrirá un PR hacia `main`.  
+   - Al menos un miembro del equipo deberá revisar y aprobar el PR antes de fusionarlo.  
+   - El historial de commits debe ser claro y, de ser necesario, se usará squash para mantenerlo limpio.  
+
+4. **Integración**  
+   - Tras la aprobación, la rama se fusionará en `main`.  
+   - Las ramas que ya fueron fusionadas deben eliminarse para mantener el repositorio ordenado. 
